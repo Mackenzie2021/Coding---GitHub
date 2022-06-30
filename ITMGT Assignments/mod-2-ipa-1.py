@@ -33,8 +33,8 @@ def savings(gross_pay, tax_rate, expenses):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-def savings(A, B, C):
-    return(A - int(A * B) - C)
+def savings(gross_pay, tax_rate, expenses):
+    return(gross_pay - int(gross_pay * tax_rate) - expenses)
 
 savings(500, 0.12, 200)
 
@@ -71,10 +71,10 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-def material_waste(A, B, C, D):
-    return str((A - (B * C))) + D
+def material_waste(total_material, material_units, num_jobs, job_consumption):
+    return str((total_material - (num_jobs * job_consumption))) + material_units
 
-material_waste(1000, 10, 30, "kg")
+material_waste(1000, "kg", 10, 30)
 
 def interest(principal, rate, periods):
     '''Interest.
@@ -104,8 +104,8 @@ def interest(principal, rate, periods):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-def interest(A, B, C):
-    return(A * (B * C)) + A
+def interest(principal, rate, periods):
+    return(principal * (rate * periods)) + principal
 
 interest(10000, 0.03, 5)
 
